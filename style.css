@@ -32,5 +32,16 @@ header {
 }
 
 main {
-  padding-top: 100px;
+  padding-top: 120px;
+
+}
+
+.left {
+  float: left;
+
+}
+
+.right {
+  float: right;
+  padding-right: 150px;
 }
