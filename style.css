@@ -2,6 +2,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: white;
+
 }
 #search-input {
   padding: 6px;
@@ -25,4 +29,9 @@ header {
 }
 .nav-buttons {
   margin: 5px;
+}
+
+main {
+  padding-top: 100px;
+
 }
