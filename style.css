@@ -6,6 +6,7 @@ header {
   position: fixed;
   top: 0;
   background-color: white;
+  opacity: 90%;
 }
 #search-input {
   padding: 6px;
@@ -26,6 +27,7 @@ header {
   font-size: 15px;
   border-width: thin;
   border-color: gainsboro;
+  cursor: pointer;
 }
 .nav-buttons {
   margin: 5px;
@@ -44,4 +46,17 @@ main {
 .right {
   float: right;
   padding-right: 150px;
+}
+
+
+.users {
+  border-radius: 50%;
+  resize: 50%;
+  float: left;
+
+}
+
+.usernames {
+  padding-right: 30px;
+  padding-left: 50px;
 }
