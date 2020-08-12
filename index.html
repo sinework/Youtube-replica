@@ -16,106 +16,297 @@
   </head>
   <body>
     <header>
-      <div class="logo">
-        <a  type="button" class="nav-buttons" style="cursor:pointer">
-          <i class="material-icons">reorder</i>
-        </a>
-        <a href ="#" type="button" class="nav-buttons">
-          <img
-            class="logo"
-            src="yt_logo_rgb_light.png"
-            width="70"
-            height="20"
-          />
-        </a>
-      </div>
+      <nav>
+        <div class="logo">
+          <a href="#" class="nav-buttons" style="cursor: pointer;">
+            <i class="material-icons">reorder</i>
+          </a>
+          <a href="#" class="nav-buttons">
+            <img
+              alt=""
+              class="logo"
+              src="yt_logo_rgb_light.png"
+              width="70"
+              height="20"
+            />
+          </a>
+        </div>
 
         <form>
-            <div class="search-form">
-          <input
-            id="search-input"
-            type="text"
-            placeholder="Search.."
-            name="search"
-          />
-          <button id="submit-button" type="submit">
-            <i class="fa fa-search"></i>
-          </button>
-        </div>
+          <div class="search-form">
+            <input
+              id="search-input"
+              type="text"
+              placeholder="Search.."
+              name="search"
+            />
+            <button id="submit-button" type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
         </form>
 
+        <div class="right-side-icons">
+          <a href="#" style="cursor: pointer;" class="nav-buttons">
+            <i class="material-icons">videocam_off</i>
+          </a>
 
-      <div class="right-side-icons">
-        <a href="#" style="cursor:pointer" type="button" class="nav-buttons">
-          <i class="material-icons">videocam_off</i>
-        </a>
-
-        <a href="#" style="cursor:pointer" type="button" class="nav-buttons">
-          <i class="material-icons">apps</i>
-        </a>
-        <a href="#" style="cursor:pointer" type="button" class="nav-buttons">
-          <i class="material-icons">notifications_active</i>
-        </a>
-        <a href="#" style="cursor:pointer" type="button" class="nav-buttons">
-          <i class="material-icons">account_circle</i>
-        </a>
-      </div>
+          <a href="#" style="cursor: pointer;" class="nav-buttons">
+            <i class="material-icons">apps</i>
+          </a>
+          <a href="#" style="cursor: pointer;" class="nav-buttons">
+            <i class="material-icons">notifications_active</i>
+          </a>
+          <a href="#" style="cursor: pointer;" class="nav-buttons">
+            <i class="material-icons">account_circle</i>
+          </a>
+        </div>
+      </nav>
     </header>
     <main class="wrapper">
       <section class="main">
         <section class="main-video">
-            <iframe
+          <iframe
             src="https://www.youtube.com/embed/0Wf9bRXUe8M"
-            frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-         </iframe>
+            allowfullscreen
+          >
           </iframe>
         </section>
         <h3>CSS Grid layout Crash Course</h3>
         <div class="view-history">
-            <span class="view"><p>1,279,452 Views. Aug 1,2017</p> </span>
-            <span class="like-history">
-                <i class="material-icons" style="cursor:pointer;  margin-left:10px; margin-right:10px">thumb_up</i>
-                  500
-                <i class="material-icons" style="cursor:pointer;  margin-left:10px; margin-right:10px">thumb_down</i>
-                3
-                <i class="fa fa-share"style="cursor:pointer;  margin-left:10px; margin-right:10px" aria-hidden="true"></i>
-                share
-                <i class="material-icons" style="cursor:pointer;  margin-left:10px; margin-right:10px">more_horiz</i>
-            </span>
+          <span class="view">1,279,452 Views. Aug 1,2017 </span>
+          <span class="like-history">
+            <i
+              class="material-icons"
+              style="cursor: pointer; margin-left: 10px; margin-right: 10px;"
+              >thumb_up</i
+            >
+            500
+            <i
+              class="material-icons"
+              style="cursor: pointer; margin-left: 10px; margin-right: 10px;"
+              >thumb_down</i
+            >
+            3
+            <i
+              class="fa fa-share"
+              style="cursor: pointer; margin-left: 10px; margin-right: 10px;"
+              aria-hidden="true"
+            ></i>
+            share
+            <i
+              class="material-icons"
+              style="cursor: pointer; margin-left: 10px; margin-right: 10px;"
+              >more_horiz</i
+            >
+          </span>
         </div>
-            <img id="channel-icon" src="first user.jpg" >   <h4 id="channel-name">Microverse</h4>
-   <button id="subscribe">Subscribe</button>
-
+        <div>
+          <img id="channel-icon" alt="" src="first_user.jpg" />
+          <h4 id="channel-name">Microverse</h4>
+          <button id="subscribe">Subscribe</button>
         </div>
       </section>
-      <aside class="aside">
-          <div class="up-next">
-              <span>
 
-              </span>
+      <aside class="aside">
+        <div class="up-next" style="display: flex; padding-right: 20px; margin-right: 27px; margin-bottom: 5px;">
+          <p style="margin: 0; margin-right: auto; font-weight: bold;">
+            Up next
+          </p>
+          <p style="margin: 0; padding-right: 5px; font-weight: bold;">
+            Auto play
+          </p>
+          <i class="fa fa-toggle-on" aria-hidden="true"></i>
+        </div>
+
+        <!-- The same video repeated -->
+        <div class="aside-grid">
+          <div class="thumbnail">
+            <a href="#"
+              ><img
+                alt=""
+                style="width: 160px; height: 90px;"
+                src="microverse.jpg"
+            /></a>
           </div>
-          <div class="aside-grid">
-            <div class="thumbnail">
-                <a href="#"><img style="width: 200px; height: 100px;" src="microverse.jpg"></a>
+          <div class="thumb-description" style="padding-left: 15px;">
+            <div style="display: flex; justify-content: start;">
+              <h5 style="margin: 0; padding-right: 20px;">
+                From Student to Web Developer:<br />An interview with Juan
+                Manuel..
+              </h5>
+
+              <i class="material-icons">more_vert</i>
             </div>
-            <div class="thumb-description">
-                <span style="display: inline-block;" >
-                    <h5>
-                         From Student to Web Developer:<br>An interview with Juan Manuel </h5>
-                         <i  class="material-icons">thumb_up</i>
-                </span>
-            </div>
+
+            <p style="margin: 5px 0 0 0; padding: 0;">Microverse</p>
+            <p style="margin: 0; padding: 0;">1.9K views . 7 Months ago</p>
           </div>
+        </div>
+
+<!-- The same video repeated -->
+  <!-- The same video repeated -->
+  <div class="aside-grid">
+    <div class="thumbnail">
+      <a href="#"
+        ><img
+          alt=""
+          style="width: 160px; height: 90px;"
+          src="microverse.jpg"
+      /></a>
+    </div>
+    <div class="thumb-description" style="padding-left: 15px;">
+      <div style="display: flex; justify-content: start;">
+        <h5 style="margin: 0; padding-right: 20px;">
+          From Student to Web Developer:<br />An interview with Juan
+          Manuel..
+        </h5>
+
+        <i class="material-icons">more_vert</i>
+      </div>
+
+      <p style="margin: 5px 0 0 0; padding: 0;">Microverse</p>
+      <p style="margin: 0; padding: 0;">1.9K views . 7 Months ago</p>
+    </div>
+  </div>
+
+<!-- The same video repeated -->
+  <!-- The same video repeated -->
+  <div class="aside-grid">
+    <div class="thumbnail">
+      <a href="#"
+        ><img
+          alt=""
+          style="width: 160px; height: 90px;"
+          src="microverse.jpg"
+      /></a>
+    </div>
+    <div class="thumb-description" style="padding-left: 15px;">
+      <div style="display: flex; justify-content: start;">
+        <h5 style="margin: 0; padding-right: 20px;">
+          From Student to Web Developer:<br />An interview with Juan
+          Manuel..
+        </h5>
+
+        <i class="material-icons">more_vert</i>
+      </div>
+
+      <p style="margin: 5px 0 0 0; padding: 0;">Microverse</p>
+      <p style="margin: 0; padding: 0;">1.9K views . 7 Months ago</p>
+    </div>
+  </div>
+
+<!-- The same video repeated -->
+  <!-- The same video repeated -->
+  <div class="aside-grid">
+    <div class="thumbnail">
+      <a href="#"
+        ><img
+          alt=""
+          style="width: 160px; height: 90px;"
+          src="microverse.jpg"
+      /></a>
+    </div>
+    <div class="thumb-description" style="padding-left: 15px;">
+      <div style="display: flex; justify-content: start;">
+        <h5 style="margin: 0; padding-right: 20px;">
+          From Student to Web Developer:<br />An interview with Juan
+          Manuel..
+        </h5>
+
+        <i class="material-icons">more_vert</i>
+      </div>
+
+      <p style="margin: 5px 0 0 0; padding: 0;">Microverse</p>
+      <p style="margin: 0; padding: 0;">1.9K views . 7 Months ago</p>
+    </div>
+  </div>
+
+<!-- The same video repeated -->
+  <!-- The same video repeated -->
+  <div class="aside-grid">
+    <div class="thumbnail">
+      <a href="#"
+        ><img
+          alt=""
+          style="width: 160px; height: 90px;"
+          src="microverse.jpg"
+      /></a>
+    </div>
+    <div class="thumb-description" style="padding-left: 15px;">
+      <div style="display: flex; justify-content: start;">
+        <h5 style="margin: 0; padding-right: 20px;">
+          From Student to Web Developer:<br />An interview with Juan
+          Manuel..
+        </h5>
+
+        <i class="material-icons">more_vert</i>
+      </div>
+
+      <p style="margin: 5px 0 0 0; padding: 0;">Microverse</p>
+      <p style="margin: 0; padding: 0;">1.9K views . 7 Months ago</p>
+    </div>
+  </div>
+
+<!-- The same video repeated -->
+  <!-- The same video repeated -->
+  <div class="aside-grid">
+    <div class="thumbnail">
+      <a href="#"
+        ><img
+          alt=""
+          style="width: 160px; height: 90px;"
+          src="microverse.jpg"
+      /></a>
+    </div>
+    <div class="thumb-description" style="padding-left: 15px;">
+      <div style="display: flex; justify-content: start;">
+        <h5 style="margin: 0; padding-right: 20px;">
+          From Student to Web Developer:<br />An interview with Juan
+          Manuel..
+        </h5>
+
+        <i class="material-icons">more_vert</i>
+      </div>
+
+      <p style="margin: 5px 0 0 0; padding: 0;">Microverse</p>
+      <p style="margin: 0; padding: 0;">1.9K views . 7 Months ago</p>
+    </div>
+  </div>
+
+<!-- The same video repeated -->
+  <!-- The same video repeated -->
+  <div class="aside-grid">
+    <div class="thumbnail">
+      <a href="#"
+        ><img
+          alt=""
+          style="width: 160px; height: 90px;"
+          src="microverse.jpg"
+      /></a>
+    </div>
+    <div class="thumb-description" style="padding-left: 15px;">
+      <div style="display: flex; justify-content: start;">
+        <h5 style="margin: 0; padding-right: 20px;">
+          From Student to Web Developer:<br />An interview with Juan
+          Manuel..
+        </h5>
+
+        <i class="material-icons">more_vert</i>
+      </div>
+
+      <p style="margin: 5px 0 0 0; padding: 0;">Microverse</p>
+      <p style="margin: 0; padding: 0;">1.9K views . 7 Months ago</p>
+    </div>
+  </div>
+
+<!-- The same video repeated -->
 
       </aside>
 
-
-
-
       <section class="comment-section">
-          here goes the comments
+        here goes the comments
       </section>
     </main>
   </body>
