@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+                   <!-- Stylesheets used -->
+
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -12,9 +15,15 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <title>Document</title>
+
+                  <!-- Webpage title -->
+
+    <title>Youtube Replica</title>
   </head>
   <body>
+
+                       <!-- The top fixed Navigation Bar -->
+
     <header>
       <nav>
         <div class="logo">
@@ -63,8 +72,14 @@
         </div>
       </nav>
     </header>
+
+                            <!-- The Main Content -->
+
     <main class="wrapper">
       <section class="main">
+
+                            <!-- Youtube Video Player -->
+
         <section class="main-video">
           <iframe
             src="https://www.youtube.com/embed/0Wf9bRXUe8M"
@@ -73,7 +88,16 @@
           >
           </iframe>
         </section>
+
+                      <!-- Additional Info about the video -->
+
+                        <!-- Video Title -->
+
+
         <h3>CSS Grid layout Crash Course</h3>
+
+                             <!-- Views, Likes, Dislikes and Share -->
+
         <div class="view-history">
           <span class="view">1,279,452 Views. Aug 1,2017 </span>
           <span class="like-history">
@@ -104,17 +128,24 @@
         </div>
         <div style="display: flex;">
           <div>
+
+                               <!-- Channel Info -->
+
             <img
               style="display: inline-block;"
               id="channel-icon"
               alt=""
-              src="first_user.jpg"
+              src="microverse-logo.png"
             />
             <h4 style="display: inline-block;" id="channel-name">Microverse</h4>
           </div>
 
           <button id="subscribe">Subscribe</button>
         </div>
+
+
+                            <!-- Video Description -->
+
 
         <h4 id="description">
           Microverse is an online school for remote software developers where
@@ -127,6 +158,10 @@
           as you would with colleagues in a real company.<br /><br />
         </h4>
       </section>
+
+
+                                 <!-- Suggested Videos -->
+
 
       <aside class="aside">
         <div
@@ -331,6 +366,8 @@
         <!-- The same video repeated -->
       </aside>
 
+                                  <!-- Comments section -->
+
       <section class="comment-section">
         <h3>
           3 Comments
@@ -338,13 +375,13 @@
             Sort <i class="material-icons">&#xe164;</i>
           </a>
         </h3>
-        <img class="users" src="first user.jpg" />
+        <img class="users" src="first-user.jpg" alt="firstcommenter"/>
         <h5 class="usernames">Gabriel Pépin 2 months ago (edited)</h5>
         <p>This video is very nice.</p>
-        <img class="users" src="second user.jpg" />
+        <img class="users" src="second-user.jpg" alt="secondcommenter"/>
         <h5 class="usernames">Black._. 14 hours ago</h5>
         <p>Microverse teached me a lot about programming</p>
-        <img class="users" src="third user.jpg" />
+        <img class="users" src="third-user.jpg" alt="thirdcommenter"/>
         <h5 class="usernames">GameDesire 1 day ago (edited)</h5>
         <p>How do I apply?</p>
       </section>

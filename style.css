@@ -5,9 +5,49 @@ body {
   margin: auto;
 }
 
+                    /* The top fixed Navigation Bar */
+
+
 header {
   margin-bottom: 30px;
 }
+
+.logo {
+  display: flex;
+  align-items: center;
+  }
+
+  .search-form {
+    white-space: nowrap;
+    display: table;
+  }
+
+#search-input {
+    padding: 6px;
+    width: 400px;
+    margin-top: 5px;
+    font-size: 15px;
+    border-width: thin;
+    border-color: gainsboro;
+  }
+
+  #submit-button {
+    position: absolute;
+    width: 60px;
+    padding: 5px 10px;
+    margin-top: 5px;
+    margin-right: 16px;
+    background: #ebebeb;
+    font-size: 15px;
+    border-width: thin;
+    border-color: gainsboro;
+    cursor: pointer;
+  }
+
+  .nav-buttons {
+    margin: 5px;
+  }
+
 
 nav {
   display: flex;
@@ -27,63 +67,40 @@ a {
   text-decoration: none;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
+
+                         /* The Main Content */
+
+ .wrapper {
+ display: grid;
+ grid-template-columns: 2fr 1fr;
+ background-color: #f8f8f8;
 }
 
-#search-input {
-  padding: 6px;
-  width: 400px;
-  margin-top: 5px;
-  font-size: 15px;
-  border-width: thin;
-  border-color: gainsboro;
-}
-
-#submit-button {
-  position: absolute;
-  width: 60px;
-  padding: 5px 10px;
-  margin-top: 5px;
-  margin-right: 16px;
-  background: #ebebeb;
-  font-size: 15px;
-  border-width: thin;
-  border-color: gainsboro;
-  cursor: pointer;
-}
-
-.nav-buttons {
-  margin: 5px;
-}
-
-.search-form {
-  white-space: nowrap;
-  display: table;
-}
-
-.wrapper {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-
-  background-color: #f8f8f8;
-}
 .main {
-  /* background-color: yellow; */
   padding: 1em 1em 1em 4em;
 }
 
-.main-video {
-}
+                /* Youtube Video Player */
 
 iframe {
   width: 65vw;
   height: 75vh;
 }
+
+               /* Suggested Videos */
+
 .aside {
   padding-top: 20px;
 }
+
+.aside-grid {
+  display: grid;
+  grid-template-columns: 35% 65%;
+}
+
+
+               /* Views, Likes, Dislikes and Share */
+
 .view-history {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -91,23 +108,28 @@ iframe {
   border-bottom-width: thin;
   border-bottom-color: #d3d3d3;
 }
+
 .view {
   justify-self: start;
   align-self: start;
 }
+
 .like-history {
   justify-self: end;
   align-self: start;
 }
-.description {
+
+                      /* Video Description */
+
+
+
+#description {
   border-bottom-style: solid;
   border-bottom-width: thin;
   border-bottom-color: #d3d3d3;
 }
-.aside-grid {
-  display: grid;
-  grid-template-columns: 35% 65%;
-}
+
+                       /* Channel Info */
 
 #channel-icon {
   float: left;
@@ -134,21 +156,10 @@ iframe {
   background-color: rgb(212, 3, 3);
 }
 
-.video-description {
-  display: flex;
-  border-bottom-style: solid;
-  border-bottom-width: thin;
-  border-bottom-color: #d3d3d3;
-}
 
-#view {
-  font-weight: lighter;
-  font-size: 14px;
-}
 
-.thumbnail {
-  width: 180px;
-}
+                    /* Comments section */
+
 
 .comment-section {
   padding: 16px 32px;
@@ -158,11 +169,22 @@ iframe {
   float: right;
 }
 
-#description {
-  border-bottom-style: solid;
-  border-bottom-width: thin;
-  border-bottom-color: #d3d3d3;
+.users {
+  border-radius: 50%;
+  resize: 50%;
+  float: left;
 }
+
+
+.usernames {
+  padding-right: 30px;
+  padding-left: 50px;
+}
+
+
+                        /* Responsive properties */
+
+
 
 @media screen and (max-width: 600px) {
   .wrapper {
@@ -182,15 +204,4 @@ iframe {
     width: 100%;
     height: 300px;
   }
-}
-
-.users {
-  border-radius: 50%;
-  resize: 50%;
-  float: left;
-}
-
-.usernames {
-  padding-right: 30px;
-  padding-left: 50px;
 }
