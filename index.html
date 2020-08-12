@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-                   <!-- Stylesheets used -->
+    <!-- Stylesheets used -->
 
     <link rel="stylesheet" href="style.css" />
     <link
@@ -16,13 +16,12 @@
       rel="stylesheet"
     />
 
-                  <!-- Webpage title -->
+    <!-- Webpage title -->
 
     <title>Youtube Replica</title>
   </head>
   <body>
-
-                       <!-- The top fixed Navigation Bar -->
+    <!-- The top fixed Navigation Bar -->
 
     <header>
       <nav>
@@ -56,29 +55,28 @@
         </form>
 
         <div class="right-side-icons">
-          <a href="#" style="cursor: pointer;" class="nav-buttons">
+          <a href="#" class="nav-buttons">
             <i class="material-icons">videocam_off</i>
           </a>
 
-          <a href="#" style="cursor: pointer;" class="nav-buttons">
+          <a href="#" class="nav-buttons">
             <i class="material-icons">apps</i>
           </a>
-          <a href="#" style="cursor: pointer;" class="nav-buttons">
+          <a href="#" class="nav-buttons">
             <i class="material-icons">notifications_active</i>
           </a>
-          <a href="#" style="cursor: pointer;" class="nav-buttons">
+          <a href="#" class="nav-buttons">
             <i class="material-icons">account_circle</i>
           </a>
         </div>
       </nav>
     </header>
 
-                            <!-- The Main Content -->
+    <!-- The Main Content -->
 
     <main class="wrapper">
       <section class="main">
-
-                            <!-- Youtube Video Player -->
+        <!-- Youtube Video Player -->
 
         <section class="main-video">
           <iframe
@@ -89,68 +87,44 @@
           </iframe>
         </section>
 
-                      <!-- Additional Info about the video -->
+        <!-- Additional Info about the video -->
 
-                        <!-- Video Title -->
-
+        <!-- Video Title -->
 
         <h3>CSS Grid layout Crash Course</h3>
 
-                             <!-- Views, Likes, Dislikes and Share -->
+        <!-- Views, Likes, Dislikes and Share -->
 
         <div class="view-history">
           <span class="view">1,279,452 Views. Aug 1,2017 </span>
           <span class="like-history">
-            <i
-              class="material-icons"
-              style="cursor: pointer; margin-left: 10px; margin-right: 10px;"
-              >thumb_up</i
-            >
+            <i id="i-tags" class="material-icons">thumb_up</i>
             500
-            <i
-              class="material-icons"
-              style="cursor: pointer; margin-left: 10px; margin-right: 10px;"
-              >thumb_down</i
-            >
+            <i id="i-tags" class="material-icons">thumb_down</i>
             3
-            <i
-              class="fa fa-share"
-              style="cursor: pointer; margin-left: 10px; margin-right: 10px;"
-              aria-hidden="true"
-            ></i>
+            <i id="i-tags" class="fa fa-share" aria-hidden="true"></i>
             share
-            <i
-              class="material-icons"
-              style="cursor: pointer; margin-left: 10px; margin-right: 10px;"
-              >more_horiz</i
-            >
+            <i id="i-tags" class="material-icons">more_horiz</i>
           </span>
         </div>
-        <div style="display: flex;">
+
+        <!-- Channel Info -->
+
+        <div class="channel-name">
           <div>
-
-                               <!-- Channel Info -->
-
-            <img
-              style="display: inline-block;"
-              id="channel-icon"
-              alt=""
-              src="microverse-logo.png"
-            />
-            <h4 style="display: inline-block;" id="channel-name">Microverse</h4>
+            <img id="channel-icon" alt="" src="microverse-logo.png" />
+            <h4 id="channel-name">Microverse</h4>
           </div>
 
           <button id="subscribe">Subscribe</button>
         </div>
 
-
-                            <!-- Video Description -->
-
+        <!-- Video Description -->
 
         <h4 id="description">
           Microverse is an online school for remote software developers where
           you pay nothing until you land a life-changing job, no matter where
-          you live.<br><br>
+          you live.<br /><br />
 
           At Microverse, there are no classes or physical classrooms. Instead,
           students learn through a very unique approach — by remote pair
@@ -159,24 +133,14 @@
         </h4>
       </section>
 
-
-                                 <!-- Suggested Videos -->
-
+      <!-- Suggested Videos -->
 
       <aside class="aside">
-        <div
-          class="up-next"
-          style="
-            display: flex;
-            padding-right: 20px;
-            margin-right: 27px;
-            margin-bottom: 5px;
-          "
-        >
-          <p style="margin: 0; margin-right: auto; font-weight: bold;">
+        <div class="up-next">
+          <p id="next">
             Up next
           </p>
-          <p style="margin: 0; padding-right: 5px; font-weight: bold;">
+          <p id="auto-play">
             Auto play
           </p>
           <i class="fa fa-toggle-on" aria-hidden="true"></i>
@@ -185,16 +149,13 @@
         <!-- The same video repeated -->
         <div class="aside-grid">
           <div class="thumbnail">
-            <a href="#"
-              ><img
-                alt=""
-                style="width: 160px; height: 90px;"
-                src="microverse.jpg"
-            /></a>
+            <a href="#"><img id="thumb-image" alt="" src="microverse.jpg" /></a>
           </div>
-          <div class="thumb-description" style="padding-left: 15px;">
-            <div style="display: flex; justify-content: start;">
-              <h5 style="margin: 0; padding-right: 20px;">
+          <div class="thumb-description">
+            <div class="description-title-holder">
+              <h5
+              class="description-title">
+                
                 From Student to Web Developer:<br />An interview with Juan
                 Manuel..
               </h5>
@@ -202,8 +163,8 @@
               <i class="material-icons">more_vert</i>
             </div>
 
-            <p style="margin: 5px 0 0 0; padding: 0;">Microverse</p>
-            <p style="margin: 0; padding: 0;">1.9K views . 7 Months ago</p>
+            <p id="microverse-desc" >Microverse</p>
+            <p id="post-date" >1.9K views . 7 Months ago</p>
           </div>
         </div>
 
@@ -366,7 +327,11 @@
         <!-- The same video repeated -->
       </aside>
 
-                                  <!-- Comments section -->
+
+
+      
+
+      <!-- Comments section -->
 
       <section class="comment-section">
         <h3>
@@ -375,13 +340,13 @@
             Sort <i class="material-icons">&#xe164;</i>
           </a>
         </h3>
-        <img class="users" src="first-user.jpg" alt="firstcommenter"/>
+        <img class="users" src="first-user.jpg" alt="firstcommenter" />
         <h5 class="usernames">Gabriel Pépin 2 months ago (edited)</h5>
         <p>This video is very nice.</p>
-        <img class="users" src="second-user.jpg" alt="secondcommenter"/>
+        <img class="users" src="second-user.jpg" alt="secondcommenter" />
         <h5 class="usernames">Black._. 14 hours ago</h5>
         <p>Microverse teached me a lot about programming</p>
-        <img class="users" src="third-user.jpg" alt="thirdcommenter"/>
+        <img class="users" src="third-user.jpg" alt="thirdcommenter" />
         <h5 class="usernames">GameDesire 1 day ago (edited)</h5>
         <p>How do I apply?</p>
       </section>

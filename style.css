@@ -5,8 +5,7 @@ body {
   margin: auto;
 }
 
-                    /* The top fixed Navigation Bar */
-
+/* The top fixed Navigation Bar */
 
 header {
   margin-bottom: 30px;
@@ -15,41 +14,39 @@ header {
 .logo {
   display: flex;
   align-items: center;
-  }
+}
 
-  .search-form {
-    white-space: nowrap;
-    display: table;
-  }
+.search-form {
+  white-space: nowrap;
+  display: table;
+}
 
 #search-input {
-    padding: 6px;
-    width: 575px;
-    margin-top: 5px;
-    font-size: 15px;
-    border-width: thin;
-    border-color: gainsboro;
+  padding: 6px;
+  width: 575px;
+  margin-top: 5px;
+  font-size: 15px;
+  border-width: thin;
+  border-color: gainsboro;
+}
 
-  }
+#submit-button {
+  position: absolute;
+  width: 60px;
+  padding: 5px 10px;
+  margin-top: 5px;
+  margin-right: 16px;
+  background: #ebebeb;
+  font-size: 15px;
+  border-width: thin;
+  border-color: gainsboro;
+  cursor: pointer;
+  height: 32px;
+}
 
-  #submit-button {
-    position: absolute;
-    width: 60px;
-    padding: 5px 10px;
-    margin-top: 5px;
-    margin-right: 16px;
-    background: #ebebeb;
-    font-size: 15px;
-    border-width: thin;
-    border-color: gainsboro;
-    cursor: pointer;
-    height: 32px;
-  }
-
-  .nav-buttons {
-    margin: 5px;
-  }
-
+.nav-buttons {
+  margin: 5px;
+}
 
 nav {
   display: flex;
@@ -66,30 +63,30 @@ nav {
 
 a {
   color: inherit;
+  cursor: pointer;
   text-decoration: none;
 }
 
+/* The Main Content */
 
-                         /* The Main Content */
-
- .wrapper {
- display: grid;
- grid-template-columns: 2fr 1fr;
- background-color: #f8f8f8;
+.wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: #f8f8f8;
 }
 
 .main {
   padding: 1em 1em 1em 4em;
 }
 
-                /* Youtube Video Player */
+/* Youtube Video Player */
 
 iframe {
   width: 65vw;
   height: 75vh;
 }
 
-               /* Suggested Videos */
+/* Suggested Videos */
 
 .aside {
   padding-top: 20px;
@@ -100,8 +97,25 @@ iframe {
   grid-template-columns: 35% 65%;
 }
 
-
-               /* Views, Likes, Dislikes and Share */
+#thumb-image{
+  width: 160px; height: 90px;
+}
+.thumb-description{
+  padding-left: 15px;
+}
+.description-title-holder{
+  display: flex; justify-content: start;
+}
+.description-title{
+  margin: 0; padding-right: 20px;
+}
+#microverse-desc{
+  margin: 5px 0 0 0; padding: 0;
+}
+#post-date{
+  margin: 0; padding: 0;
+}
+/* Views, Likes, Dislikes and Share */
 
 .view-history {
   display: grid;
@@ -121,9 +135,8 @@ iframe {
   align-self: start;
 }
 
-                      /* Video Description */
 
-
+/* Video Description */
 
 #description {
   border-bottom-style: solid;
@@ -132,8 +145,10 @@ iframe {
   margin-top: 0;
 }
 
-                       /* Channel Info */
-
+/* Channel Info */
+.channel-name{
+  display: flex;
+ }
 #channel-icon {
   float: left;
   margin: 5px;
@@ -141,10 +156,24 @@ iframe {
   border-radius: 50%;
   height: 40px;
   width: 40px;
+  display: inline-block;
+}
+.up-next{
+  display: flex;
+  padding-right: 20px;
+  margin-right: 27px;
+  margin-bottom: 5px;
 }
 
+#next{
+  margin: 0; margin-right: auto; font-weight: bold;
+}
+#auto-play{
+  margin: 0; padding-right: 5px; font-weight: bold;
+}
 #channel-name {
   padding-top: 10px;
+  display: inline-block;
 }
 
 #subscribe {
@@ -159,10 +188,13 @@ iframe {
   background-color: rgb(212, 3, 3);
 }
 
+#i-tags {
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
-
-                    /* Comments section */
-
+/* Comments section */
 
 .comment-section {
   padding: 16px 32px 0px 64px;
@@ -178,16 +210,12 @@ iframe {
   float: left;
 }
 
-
 .usernames {
   padding-right: 30px;
   padding-left: 50px;
 }
 
-
-                        /* Responsive properties */
-
-
+/* Responsive properties */
 
 @media screen and (max-width: 600px) {
   .wrapper {
