@@ -140,3 +140,45 @@ iframe {
 .thumbnail {
   width: 180px;
 }
+
+.comment-section {
+  padding: 16px 32px;
+}
+
+#sort {
+  float: right;
+}
+
+#description {
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  border-bottom-color: #d3d3d3;
+}
+
+@media screen and (max-width: 600px) {
+ .wrapper {
+  grid-template-columns: 2fr;
+  float: none;
+  margin-right:0;
+  width:auto;
+  border:0;
+  border-bottom:2px solid #000;
+
+}
+.aside {
+
+  padding-top: 30px;
+  padding-left: 32px;
+}
+}
+
+.users {
+  border-radius: 50%;
+  resize: 50%;
+  float: left;
+}
+
+.usernames {
+  padding-right: 30px;
+  padding-left: 50px;
+}
