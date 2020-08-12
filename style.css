@@ -97,23 +97,32 @@ iframe {
   grid-template-columns: 35% 65%;
 }
 
-#thumb-image{
-  width: 160px; height: 90px;
+#thumb-image {
+  width: 160px;
+  height: 90px;
 }
-.thumb-description{
+.thumb-description {
   padding-left: 15px;
 }
-.description-title-holder{
-  display: flex; justify-content: start;
+.description-title-holder {
+  display: flex;
+  justify-content: start;
 }
-.description-title{
-  margin: 0; padding-right: 20px;
+.description-title {
+  margin: 0;
+  padding-right: 20px;
 }
-#microverse-desc{
-  margin: 5px 0 0 0; padding: 0;
+#microverse-desc {
+  margin: 5px 0 0 0;
+  padding: 0;
+  font-size: 15px;
+  color: grey;
 }
-#post-date{
-  margin: 0; padding: 0;
+#post-date {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  color: grey;
 }
 /* Views, Likes, Dislikes and Share */
 
@@ -135,7 +144,6 @@ iframe {
   align-self: start;
 }
 
-
 /* Video Description */
 
 #description {
@@ -146,9 +154,9 @@ iframe {
 }
 
 /* Channel Info */
-.channel-name{
+.channel-name {
   display: flex;
- }
+}
 #channel-icon {
   float: left;
   margin: 5px;
@@ -158,18 +166,22 @@ iframe {
   width: 40px;
   display: inline-block;
 }
-.up-next{
+.up-next {
   display: flex;
   padding-right: 20px;
   margin-right: 27px;
   margin-bottom: 5px;
 }
 
-#next{
-  margin: 0; margin-right: auto; font-weight: bold;
+#next {
+  margin: 0;
+  margin-right: auto;
+  font-weight: bold;
 }
-#auto-play{
-  margin: 0; padding-right: 5px; font-weight: bold;
+#auto-play {
+  margin: 0;
+  padding-right: 5px;
+  font-weight: bold;
 }
 #channel-name {
   padding-top: 10px;
