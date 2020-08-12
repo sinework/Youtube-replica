@@ -1,119 +1,53 @@
 html,
 body {
   height: 100%;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-header {
-  display: flex;
   width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  background-color: white;
-  opacity: 90%;
-}
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-#search-input {
-  padding: 6px;
-  width: 400px;
-  margin-top: 5px;
-  font-size: 15px;
-  border-width: thin;
-  border-color: gainsboro;
+  margin: auto;
 }
 
 .wrapper {
   display: grid;
-  grid-template-columns: 70% 30%;
-  padding: 50px;
+  margin-top: 50px;
+  grid-template-columns: 2fr 1fr;
+
+  grid-gap: 1em;
+}
+.main {
+  /* background-color: yellow; */
+  padding: 1em 2em 1em 2em;
 }
 
-.main-content {
-  width: 100%;
-  height: 100%;
-}
 .main-video {
-  display: flex;
-  width: 100%;
-}
-.aside-content {
-  padding: 20px;
 }
 
-#submit-button {
-  float: right;
-  width: 60px;
-  padding: 5px 10px;
-  margin-top: 5px;
-  margin-right: 16px;
-  background: #ebebeb;
-  font-size: 15px;
-  border-width: thin;
-  border-color: gainsboro;
-  cursor: pointer;
+iframe {
+  width: 65vw;
+  height: 75vh;
 }
-.nav-buttons {
-  margin: 5px;
+.aside {
+  /* background-color: red; */
 }
-
-main {
-  padding-top: 120px;
-}
-
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
-  padding-right: 150px;
-}
-
-.users {
-  border-radius: 50%;
-  resize: 50%;
-  float: left;
-}
-
-.usernames {
-  padding-right: 30px;
-  padding-left: 50px;
-}
-#channel-icon {
-  float: left;
-  margin: 5px;
-  margin-top: 15px;
-  border-radius: 50%;
-  height: 40px;
-  width: 40px;
-}
-#channel-name {
-  padding-top: 10px;
-}
-#subscribe {
-  margin-left: auto;
-  margin-top: 40px;
-  margin-bottom: 5px;
-  background-color: red;
-}
-.video-description {
-  display: flex;
+.view-history {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   border-bottom-style: solid;
   border-bottom-width: thin;
   border-bottom-color: #d3d3d3;
 }
-
-#views {
-  font-weight: lighter;
-  font-size: 14px;
+.view {
+  justify-self: start;
+  align-self: start;
+}
+.like-history {
+  justify-self: end;
+  align-self: start;
+}
+.description {
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  border-bottom-color: #d3d3d3;
+}
+.aside-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
