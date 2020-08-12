@@ -2,7 +2,7 @@
 >
 > This is a youtube clone page made as the first project for the Microverse HTML&CSS3 Track. Is has the main section which has the main video player and a side section with suggested videos. Comments and descriptions are also displayed as they are on youtube.
 
-![screenshot](https://ibb.co/Yp0Gd05)
+![picture](img/screenshot.png)
 
 ## Built With
 
