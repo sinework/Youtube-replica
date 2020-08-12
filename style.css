@@ -3,6 +3,11 @@ body {
   height: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 header {
   display: flex;
   width: 100%;
@@ -12,6 +17,19 @@ header {
   top: 0;
   background-color: white;
   opacity: 90%;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+#search-input {
+  padding: 6px;
+  width: 400px;
+  margin-top: 5px;
+  font-size: 15px;
+  border-width: thin;
+  border-color: gainsboro;
 }
 
 .wrapper {
@@ -30,15 +48,6 @@ header {
 }
 .aside-content {
   padding: 20px;
-
-}
-#search-input {
-  padding: 6px;
-  width: 400px;
-  margin-top: 5px;
-  font-size: 15px;
-  border-width: thin;
-  border-color: gainsboro;
 }
 
 #submit-button {
@@ -96,14 +105,12 @@ main {
   margin-top: 40px;
   margin-bottom: 5px;
   background-color: red;
-
-
 }
 .video-description {
   display: flex;
   border-bottom-style: solid;
   border-bottom-width: thin;
-  border-bottom-color: 	#D3D3D3;
+  border-bottom-color: #d3d3d3;
 }
 
 #views {
