@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Stylesheets used -->
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Webpage title -->
+
+    <title>Youtube Replica</title>
+  </head>
+  <body>
+    <!-- The top fixed Navigation Bar -->
+
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="#" class="nav-buttons" style="cursor: pointer;">
+            <i class="material-icons">reorder</i>
+          </a>
+          <a href="#" class="nav-buttons">
+            <img
+              alt=""
+              class="logo"
+              src="yt_logo_rgb_light.png"
+              width="70"
+              height="20"
+            />
+          </a>
+        </div>
+
+        <form>
+          <div class="search-form">
+            <input
+              id="search-input"
+              type="text"
+              placeholder="Search.."
+              name="search"
+            />
+            <button id="submit-button" type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </form>
+
+        <div class="right-side-icons">
+          <a href="#" class="nav-buttons">
+            <i class="material-icons">videocam_off</i>
+          </a>
+
+          <a href="#" class="nav-buttons">
+            <i class="material-icons">apps</i>
+          </a>
+          <a href="#" class="nav-buttons">
+            <i class="material-icons">notifications_active</i>
+          </a>
+          <a href="#" class="nav-buttons">
+            <i class="material-icons">account_circle</i>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- The Main Content -->
+
+    <main class="wrapper">
+      <section class="main">
+        <!-- Youtube Video Player -->
+
+        <section class="main-video">
+          <iframe
+            src="https://www.youtube.com/embed/0Wf9bRXUe8M"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </section>
+
+        <!-- Additional Info about the video -->
+
+        <!-- Video Title -->
+
+        <h3>CSS Grid layout Crash Course</h3>
+
+        <!-- Views, Likes, Dislikes and Share -->
+
+        <div class="view-history">
+          <span class="view">1,279,452 Views. Aug 1,2017 </span>
+          <span class="like-history">
+            <i id="i-tags" class="material-icons">thumb_up</i>
+            500
+            <i id="i-tags" class="material-icons">thumb_down</i>
+            3
+            <i id="i-tags" class="fa fa-share" aria-hidden="true"></i>
+            share
+            <i id="i-tags" class="material-icons">more_horiz</i>
+          </span>
+        </div>
+
+        <!-- Channel Info -->
+
+        <div class="channel-name">
+          <div>
+            <img id="channel-icon" alt="" src="microverse-logo.png" />
+            <h4 id="channel-name">Microverse</h4>
+          </div>
+
+          <button id="subscribe">Subscribe</button>
+        </div>
+
+        <!-- Video Description -->
+
+        <h4 id="description">
+          Microverse is an online school for remote software developers where
+          you pay nothing until you land a life-changing job, no matter where
+          you live.<br /><br />
+
+          At Microverse, there are no classes or physical classrooms. Instead,
+          students learn through a very unique approach — by remote pair
+          programming and collaborating with other students in real-time, just
+          as you would with colleagues in a real company.<br /><br />
+        </h4>
+      </section>
+
+      <!-- Suggested Videos -->
+
+      <aside class="aside">
+        <div class="up-next">
+          <p id="next">
+            Up next
+          </p>
+          <p id="auto-play">
+            Auto play
+          </p>
+          <i class="fa fa-toggle-on" aria-hidden="true"></i>
+        </div>
+
+        <!-- The same video repeated -->
+        <div class="aside-grid">
+          <div class="thumbnail">
+            <a href="#"><img id="thumb-image" alt="" src="microverse.jpg" /></a>
+          </div>
+          <div class="thumb-description">
+            <div class="description-title-holder">
+              <h5
+              class="description-title">
+                
+                From Student to Web Developer:<br />An interview with Juan
+                Manuel..
+              </h5>
+
+              <i class="material-icons">more_vert</i>
+            </div>
+
+            <p id="microverse-desc" >Microverse</p>
+            <p id="post-date" >1.9K views . 7 Months ago</p>
+          </div>
+        </div>
+
+        <!-- The same video repeated -->
+        <div class="aside-grid">
+          <div class="thumbnail">
+            <a href="#"><img id="thumb-image" alt="" src="microverse.jpg" /></a>
+          </div>
+          <div class="thumb-description">
+            <div class="description-title-holder">
+              <h5
+              class="description-title">
+                
+                From Student to Web Developer:<br />An interview with Juan
+                Manuel..
+              </h5>
+
+              <i class="material-icons">more_vert</i>
+            </div>
+
+            <p id="microverse-desc" >Microverse</p>
+            <p id="post-date" >1.9K views . 7 Months ago</p>
+          </div>
+        </div>
+
+        <!-- The same video repeated -->
+        <div class="aside-grid">
+          <div class="thumbnail">
+            <a href="#"><img id="thumb-image" alt="" src="microverse.jpg" /></a>
+          </div>
+          <div class="thumb-description">
+            <div class="description-title-holder">
+              <h5
+              class="description-title">
+                
+                From Student to Web Developer:<br />An interview with Juan
+                Manuel..
+              </h5>
+
+              <i class="material-icons">more_vert</i>
+            </div>
+
+            <p id="microverse-desc" >Microverse</p>
+            <p id="post-date" >1.9K views . 7 Months ago</p>
+          </div>
+        </div>
+
+        <!-- The same video repeated -->
+        <div class="aside-grid">
+          <div class="thumbnail">
+            <a href="#"><img id="thumb-image" alt="" src="microverse.jpg" /></a>
+          </div>
+          <div class="thumb-description">
+            <div class="description-title-holder">
+              <h5
+              class="description-title">
+                
+                From Student to Web Developer:<br />An interview with Juan
+                Manuel..
+              </h5>
+
+              <i class="material-icons">more_vert</i>
+            </div>
+
+            <p id="microverse-desc" >Microverse</p>
+            <p id="post-date" >1.9K views . 7 Months ago</p>
+          </div>
+        </div>
+
+        <!-- The same video repeated -->
+        <div class="aside-grid">
+          <div class="thumbnail">
+            <a href="#"><img id="thumb-image" alt="" src="microverse.jpg" /></a>
+          </div>
+          <div class="thumb-description">
+            <div class="description-title-holder">
+              <h5
+              class="description-title">
+                
+                From Student to Web Developer:<br />An interview with Juan
+                Manuel..
+              </h5>
+
+              <i class="material-icons">more_vert</i>
+            </div>
+
+            <p id="microverse-desc" >Microverse</p>
+            <p id="post-date" >1.9K views . 7 Months ago</p>
+          </div>
+        </div>
+
+        <!-- The same video repeated -->
+        <div class="aside-grid">
+          <div class="thumbnail">
+            <a href="#"><img id="thumb-image" alt="" src="microverse.jpg" /></a>
+          </div>
+          <div class="thumb-description">
+            <div class="description-title-holder">
+              <h5
+              class="description-title">
+                
+                From Student to Web Developer:<br />An interview with Juan
+                Manuel..
+              </h5>
+
+              <i class="material-icons">more_vert</i>
+            </div>
+
+            <p id="microverse-desc" >Microverse</p>
+            <p id="post-date" >1.9K views . 7 Months ago</p>
+          </div>
+        </div>
+
+        <!-- The same video repeated -->
+        <div class="aside-grid">
+          <div class="thumbnail">
+            <a href="#"><img id="thumb-image" alt="" src="microverse.jpg" /></a>
+          </div>
+          <div class="thumb-description">
+            <div class="description-title-holder">
+              <h5
+              class="description-title">
+                
+                From Student to Web Developer:<br />An interview with Juan
+                Manuel..
+              </h5>
+
+              <i class="material-icons">more_vert</i>
+            </div>
+
+            <p id="microverse-desc" >Microverse</p>
+            <p id="post-date" >1.9K views . 7 Months ago</p>
+          </div>
+        </div>
+
+        <!-- The same video repeated -->
+ 
+      </aside>
+
+      <!-- Comments section -->
+
+      <section class="comment-section">
+        <h3>
+          3 Comments
+          <a id="sort" href="#">
+            Sort <i class="material-icons">&#xe164;</i>
+          </a>
+        </h3>
+        <img class="users" src="first-user.jpg" alt="firstcommenter" />
+        <h5 class="usernames">Gabriel Pépin 2 months ago (edited)</h5>
+        <p>This video is very nice.</p>
+        <img class="users" src="second-user.jpg" alt="secondcommenter" />
+        <h5 class="usernames">Black._. 14 hours ago</h5>
+        <p>Microverse teached me a lot about programming</p>
+        <img class="users" src="third-user.jpg" alt="thirdcommenter" />
+        <h5 class="usernames">GameDesire 1 day ago (edited)</h5>
+        <p>How do I apply?</p>
+      </section>
+    </main>
+  </body>
+</html>
